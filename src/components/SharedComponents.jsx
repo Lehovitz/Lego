@@ -12,6 +12,7 @@ export const StyledButton = styled.button`
   margin-top: auto;
   background-color: ${({ disabled }) => (disabled ? "#D3D3D3" : "#0066FF")};
   border: ${({ disabled }) => (disabled ? "#D3D3D3" : "#0066FF")};
+  transition: box-shadow 0.2s ease-in;
 
   ${({ disabled }) =>
     !disabled &&
@@ -39,8 +40,7 @@ export const StyledFigureCard = styled.div`
   flex-direction: column;
   margin-bottom: 32px;
   padding: 0 32px;
-  transition: box-shadow 0.3s;
-  transition: border 0.3s;
+  transition: all 0.3s ease-in;
   border: ${({ selected }) =>
     selected ? "20px solid white" : "1px solid white"};
   ${({ selected }) =>
@@ -129,6 +129,11 @@ export const StyledTextField = styled.input`
   font-size: 18px;
   font-weight: 600;
   padding: 4px;
+  background-color: white;
+  :focus {
+    outline: none;
+    box-shadow: 0 0 20px #3388ff;
+  }
 `;
 
 export const StyledInputLabel = styled.label`
