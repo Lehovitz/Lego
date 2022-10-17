@@ -7,7 +7,7 @@ import { StyledButton } from "./SharedComponents";
 import { numbersOnlyRegExp, phoneRegExp } from "../constants/regex";
 import { RED_CROSS_ICON } from "../constants/links";
 import { postShippingFormData } from "../services/figures";
-
+//TODO:: ekstrakcja komponentów, zmiana nazw niektórych styled, sprawdzić kolejny raz czy wszystko działa i deploy
 const NEXT_PAGE_NUMBER = 0;
 const StyledCard = styled.div`
   background: white;
@@ -194,10 +194,10 @@ export default function ShippingScreen({
           ))}
           <StyledButton
             type="submit"
-            //disabled={!!Object.values(formik.errors).length || !formik.dirty}
+            disabled={!!Object.values(formik.errors).length || !formik.dirty}
             onClick={() => {
               formik.handleSubmit();
-              //handlePageChange(NEXT_PAGE_NUMBER);
+              handlePageChange(NEXT_PAGE_NUMBER);
             }}
           >
             SUBMIT
