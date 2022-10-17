@@ -52,8 +52,12 @@ export const StyledFigureCard = styled.div`
   cursor: pointer;
   position: relative;
 
+  @media (max-width: 1560px) {
+    width: 320px;
+  }
+
   @media (max-width: 900px) {
-    width: 230px;
+    width: 100%;
   }
 `;
 
