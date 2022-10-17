@@ -1,0 +1,3 @@
+[submodule "Lego"] 
+  path = Lego 
+  url = "https://github.com/Lehovitz/Lego/"
