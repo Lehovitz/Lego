@@ -3,7 +3,7 @@ import * as Yup from "yup";
 import { useCallback } from "react";
 import {
   StyledButton,
-  StyledCard,
+  SummaryCard,
   StyledContainerForHeaderAndForm,
   StyledFigurePicture,
   StyledMainContainer,
@@ -103,7 +103,7 @@ export default function ShippingScreen({
           <StyledMainHeader>SHIPPING DETAILS</StyledMainHeader>
           <ShippingForm formik={formik}></ShippingForm>
         </StyledContainerForHeaderAndForm>
-        <StyledCard>
+        <SummaryCard>
           <StyledMinorHeader>SUMMARY</StyledMinorHeader>
           <StyledFigurePicture
             src={figureToShip.set_img_url}
@@ -131,7 +131,7 @@ export default function ShippingScreen({
           >
             SUBMIT
           </StyledButton>
-        </StyledCard>
+        </SummaryCard>
       </StyledMainContainer>
     </>
   );

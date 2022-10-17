@@ -145,14 +145,14 @@ export const StyledInputError = styled.div`
   height: 18px;
   font-size: 14px;
   font-weight: 550;
-  align-self: center;
+  align-self: flex-start;
 `;
 
 export const StyledSpacer = styled.div`
   height: 18px;
 `;
 
-export const StyledCard = styled.div`
+export const SummaryCard = styled.div`
   background: white;
   height: 1160px;
   width: 384px;
@@ -162,8 +162,8 @@ export const StyledCard = styled.div`
   justify-content: left;
   flex-direction: column;
   padding: 32px;
-  overflow: auto;
   position: relative;
+  overflow: hidden;
 `;
 
 export const StyledPartPicture = styled.img`
