@@ -12,16 +12,17 @@ export const StyledButton = styled.button`
   margin-top: auto;
   background-color: ${({ disabled }) => (disabled ? "#D3D3D3" : "#0066FF")};
   border: ${({ disabled }) => (disabled ? "#D3D3D3" : "#0066FF")};
-  transition: box-shadow 0.3s;
+
   ${({ disabled }) =>
     !disabled &&
-    `&:hover {
+    `:hover {
     box-shadow: 0 0 50px #3388ff;
   }`}
   cursor: pointer;
   font-family: "Black Han Sans", sans-serif;
   color: white;
   min-width: 256px;
+  min-height: 64px;
   border-radius: 10px;
   padding: 8px 24px;
   font-size: 20px;
@@ -98,6 +99,10 @@ export const StyledShippingForm = styled.form`
 
   @media (max-width: 900px) {
     width: 400px;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
   }
 `;
 
@@ -182,6 +187,10 @@ export const StyledPartNameDiv = styled.div`
   white-space: nowrap;
   text-overflow: ellipsis;
   font-weight: bolder;
+
+  @media (max-width: 500px) {
+    width: 128px;
+  }
 `;
 
 export const StyledPartNumDiv = styled.div`
