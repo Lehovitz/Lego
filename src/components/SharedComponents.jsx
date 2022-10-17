@@ -92,6 +92,7 @@ export const StyledShippingForm = styled.form`
   align-items: flex-start;
   gap: 8px;
   width: 1250px;
+  margin: auto;
 
   @media (max-width: 1400px) {
     width: 800px;
@@ -164,6 +165,11 @@ export const SummaryCard = styled.div`
   padding: 32px;
   position: relative;
   overflow: hidden;
+  margin: auto;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 export const StyledPartPicture = styled.img`
@@ -218,6 +224,14 @@ export const StyledMainContainer = styled.div`
   gap: 160px;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (max-width: 900px) {
+    gap: 80px;
+  }
+
+  @media (max-width: 900px) {
+    gap: 20px;
+  }
 `;
 
 export const StyledPartTextContainer = styled.div`
@@ -236,5 +250,6 @@ export const StyledMainHeader = styled.h1`
 
 export const StyledContainerForHeaderAndForm = styled.div`
   display: "flex";
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
 `;
