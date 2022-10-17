@@ -230,7 +230,7 @@ export const StyledMainContainer = styled.div`
   }
 
   @media (max-width: 900px) {
-    gap: 20px;
+    gap: 54px;
   }
 `;
 

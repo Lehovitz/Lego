@@ -1,6 +1,5 @@
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { useCallback } from "react";
 import {
   StyledButton,
   SummaryCard,
@@ -57,7 +56,7 @@ export default function ShippingScreen({
   figureToShipParts,
   handlePageChange,
 }) {
-  const onSubmit = useCallback(() => {
+  const onSubmit = () => {
     const personalData = formik.values;
     const partsData = figureToShipParts.map((part) => ({
       partName: part.name,
@@ -78,7 +77,7 @@ export default function ShippingScreen({
       figuresData: figuresData,
     };
     postShippingFormData(data);
-  }, []);
+  };
 
   const formik = useFormik({
     initialValues: {
