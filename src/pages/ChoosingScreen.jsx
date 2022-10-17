@@ -8,7 +8,7 @@ import {
   StyledHeader,
   StyledAnchor,
 } from "../components/SharedComponents";
-const NEXTPAGENUMBER = 2;
+const NEXT_PAGE_NUMBER = 2;
 
 export default function ChoosingScreen({
   handlePageChange,
@@ -54,7 +54,7 @@ export default function ChoosingScreen({
       <StyledButton
         disabled={!selectedFigure}
         onClick={() => {
-          handlePageChange(NEXTPAGENUMBER);
+          handlePageChange(NEXT_PAGE_NUMBER);
           handleSetFigureToShip(
             figures.find((item) => item.name === selectedFigure)
           );
