@@ -1,61 +1,12 @@
-import styled from "styled-components";
-
-const StyledShippingForm = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  width: 1250px;
-
-  @media (max-width: 1400px) {
-    width: 800px;
-  }
-
-  @media (max-width: 900px) {
-    width: 400px;
-  }
-`;
-
-const StyledTextFieldContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: flex-start;
-`;
-
-const StyledDoubleTextFieldRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-  width: 100%;
-`;
-
-const StyledTextField = styled.input`
-  width: 100%;
-  height: 48px;
-  border-radius: 8px;
-  border-color: ${({ error }) => (error ? "red" : "white")};
-  font-family: "Rubik", sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  padding: 4px;
-`;
-
-const StyledInputLabel = styled.label`
-  color: white;
-`;
-
-const StyledInputError = styled.div`
-  color: red;
-  height: 18px;
-  font-size: 14px;
-  font-weight: 550;
-  align-self: center;
-`;
-
-const StyledSpacer = styled.div`
-  height: 18px;
-`;
+import {
+  StyledDoubleTextFieldRow,
+  StyledInputError,
+  StyledInputLabel,
+  StyledShippingForm,
+  StyledSpacer,
+  StyledTextField,
+  StyledTextFieldContainer,
+} from "./SharedComponents";
 
 export default function ShippingForm({ formik }) {
   const { handleChange, handleSubmit, handleBlur, errors, values, touched } =

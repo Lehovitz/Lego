@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import StartingScreen from "./components/StartingScreen";
-import ChoosingScreen from "./components/ChoosingScreen";
-import ShippingScreen from "./components/ShippingScreen";
+import StartingScreen from "./pages/StartingScreen";
+import ChoosingScreen from "./pages/ChoosingScreen";
+import ShippingScreen from "./pages/ShippingScreen";
 import "./App.css";
 import { fetchFigureParts, fetchHarryPotterFigures } from "./services/figures";
 
